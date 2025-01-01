@@ -10,7 +10,7 @@ my_pass = "my_pass"
 start_date = dt.datetime(2024,9,25).date()
 def check():
     global start_date
-    six_months_later = (start_date + relativedelta(months=6)).date()
+    six_months_later = (start_date + relativedelta(months=6))
     today = dt.datetime.today().date()
     if today == six_months_later:
         start_date = six_months_later
